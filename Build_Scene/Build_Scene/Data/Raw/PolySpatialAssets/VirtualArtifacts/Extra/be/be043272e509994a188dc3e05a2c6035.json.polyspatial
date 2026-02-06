@@ -1,0 +1,1 @@
+{"properties":[{"name":"_DistortStrength","type":1},{"name":"_WaveCount","type":1},{"name":"_Wave_Speed","type":1},{"name":"_Wave_Width","type":1},{"name":"_Light","type":1},{"name":"_Step","type":1},{"name":"_Time","type":3}],"cullMode":2,"zTestMode":4,"zWriteControl":0,"castShadows":true,"allowMaterialOverride":false}

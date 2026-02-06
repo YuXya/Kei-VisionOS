@@ -1,0 +1,2064 @@
+<?xml version ="1.0"?>
+<materialx version = "1.38" colorspace = "lin_rec709">
+    <dot name = "_1" type = "float">
+        <input name = "in" type = "float" nodename = "_2" />
+    </dot>
+    <swizzle name = "_2" type = "float">
+        <input name = "in" type = "vector3" nodename = "_3" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <ifequal name = "_3" type = "vector3">
+        <input name = "value1" type = "float" nodename = "_4" />
+        <input name = "value2" type = "float" value = "0" />
+        <input name = "in1" type = "vector3" nodename = "_39" />
+        <input name = "in2" type = "vector3" nodename = "_272" />
+    </ifequal>
+    <ifgreatereq name = "_4" type = "float">
+        <input name = "value1" type = "float" nodename = "_5" />
+        <input name = "value2" type = "float" nodename = "_38" />
+        <input name = "in1" type = "float" value = "0" />
+        <input name = "in2" type = "float" value = "1" />
+    </ifgreatereq>
+    <magnitude name = "_5" type = "float">
+        <input name = "in" type = "vector2" nodename = "_6" />
+    </magnitude>
+    <subtract name = "_6" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_7" />
+        <input name = "in2" type = "vector2" nodename = "_36" />
+    </subtract>
+    <add name = "_7" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_8" />
+        <input name = "in2" type = "vector2" nodename = "_9" />
+    </add>
+    <dot name = "_8" type = "vector2">
+        <input name = "in" type = "vector2" value = "1,1" />
+    </dot>
+    <combine2 name = "_9" type = "vector2">
+        <input name = "in1" type = "float" nodename = "_10" />
+        <input name = "in2" type = "float" nodename = "_31" />
+    </combine2>
+    <add name = "_10" type = "float">
+        <input name = "in1" type = "float" nodename = "_11" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_11" type = "float">
+        <input name = "in1" type = "float" nodename = "_12" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <sin name = "_12" type = "float">
+        <input name = "in" type = "float" nodename = "_13" />
+    </sin>
+    <multiply name = "_13" type = "float">
+        <input name = "in1" type = "float" nodename = "_14" />
+        <input name = "in2" type = "float" nodename = "_29" />
+    </multiply>
+    <swizzle name = "_14" type = "float">
+        <input name = "in" type = "vector2" nodename = "_15" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <realitykit_fractional name = "_15" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_16" />
+    </realitykit_fractional>
+    <multiply name = "_16" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_17" />
+        <input name = "in2" type = "float" value = "46839.32" />
+    </multiply>
+    <sin name = "_17" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_18" />
+    </sin>
+    <transformmatrix name = "_18" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_19" />
+        <input name = "mat" type = "matrix22" nodename = "_28" />
+    </transformmatrix>
+    <dot name = "_19" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_20" />
+    </dot>
+    <add name = "_20" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_8" />
+        <input name = "in2" type = "vector2" nodename = "_21" />
+    </add>
+    <floor name = "_21" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_22" />
+    </floor>
+    <multiply name = "_22" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_23" />
+        <input name = "in2" type = "float" nodename = "_27" />
+    </multiply>
+    <dot name = "_23" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_26" />
+    </dot>
+    <texcoord name = "_24" type = "vector2">
+        <input name = "index" type = "integer" value = "0" />
+    </texcoord>
+    <multiply name = "_25" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_24" />
+        <input name = "in2" type = "vector2" value = "1,-1" />
+    </multiply>
+    <add name = "_26" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_25" />
+        <input name = "in2" type = "vector2" value = "0,1" />
+    </add>
+    <dot name = "_27" type = "float">
+        <input name = "in" type = "float" value = "7.34" />
+    </dot>
+    <transpose name = "_28" type = "matrix22">
+        <input name = "in" type = "matrix22" value = "15.27,47.63,99.41,89.98" />
+    </transpose>
+    <dot name = "_29" type = "float">
+        <input name = "in" type = "float" nodename = "_30" />
+    </dot>
+    <dot name = "_30" type = "float">
+        <input name = "in" type = "float" value = "2" />
+    </dot>
+    <add name = "_31" type = "float">
+        <input name = "in1" type = "float" nodename = "_32" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_32" type = "float">
+        <input name = "in1" type = "float" nodename = "_33" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <cos name = "_33" type = "float">
+        <input name = "in" type = "float" nodename = "_34" />
+    </cos>
+    <multiply name = "_34" type = "float">
+        <input name = "in1" type = "float" nodename = "_35" />
+        <input name = "in2" type = "float" nodename = "_29" />
+    </multiply>
+    <swizzle name = "_35" type = "float">
+        <input name = "in" type = "vector2" nodename = "_15" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <realitykit_fractional name = "_36" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_37" />
+    </realitykit_fractional>
+    <multiply name = "_37" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_23" />
+        <input name = "in2" type = "float" nodename = "_27" />
+    </multiply>
+    <swizzle name = "_38" type = "float">
+        <input name = "in" type = "vector3" nodename = "_39" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <ifequal name = "_39" type = "vector3">
+        <input name = "value1" type = "float" nodename = "_40" />
+        <input name = "value2" type = "float" value = "0" />
+        <input name = "in1" type = "vector3" nodename = "_65" />
+        <input name = "in2" type = "vector3" nodename = "_269" />
+    </ifequal>
+    <ifgreatereq name = "_40" type = "float">
+        <input name = "value1" type = "float" nodename = "_41" />
+        <input name = "value2" type = "float" nodename = "_64" />
+        <input name = "in1" type = "float" value = "0" />
+        <input name = "in2" type = "float" value = "1" />
+    </ifgreatereq>
+    <magnitude name = "_41" type = "float">
+        <input name = "in" type = "vector2" nodename = "_42" />
+    </magnitude>
+    <subtract name = "_42" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_43" />
+        <input name = "in2" type = "vector2" nodename = "_36" />
+    </subtract>
+    <add name = "_43" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_44" />
+        <input name = "in2" type = "vector2" nodename = "_45" />
+    </add>
+    <dot name = "_44" type = "vector2">
+        <input name = "in" type = "vector2" value = "0,1" />
+    </dot>
+    <combine2 name = "_45" type = "vector2">
+        <input name = "in1" type = "float" nodename = "_46" />
+        <input name = "in2" type = "float" nodename = "_59" />
+    </combine2>
+    <add name = "_46" type = "float">
+        <input name = "in1" type = "float" nodename = "_47" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_47" type = "float">
+        <input name = "in1" type = "float" nodename = "_48" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <sin name = "_48" type = "float">
+        <input name = "in" type = "float" nodename = "_49" />
+    </sin>
+    <multiply name = "_49" type = "float">
+        <input name = "in1" type = "float" nodename = "_50" />
+        <input name = "in2" type = "float" nodename = "_58" />
+    </multiply>
+    <swizzle name = "_50" type = "float">
+        <input name = "in" type = "vector2" nodename = "_51" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <realitykit_fractional name = "_51" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_52" />
+    </realitykit_fractional>
+    <multiply name = "_52" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_53" />
+        <input name = "in2" type = "float" value = "46839.32" />
+    </multiply>
+    <sin name = "_53" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_54" />
+    </sin>
+    <transformmatrix name = "_54" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_55" />
+        <input name = "mat" type = "matrix22" nodename = "_57" />
+    </transformmatrix>
+    <dot name = "_55" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_56" />
+    </dot>
+    <add name = "_56" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_44" />
+        <input name = "in2" type = "vector2" nodename = "_21" />
+    </add>
+    <transpose name = "_57" type = "matrix22">
+        <input name = "in" type = "matrix22" value = "15.27,47.63,99.41,89.98" />
+    </transpose>
+    <dot name = "_58" type = "float">
+        <input name = "in" type = "float" nodename = "_30" />
+    </dot>
+    <add name = "_59" type = "float">
+        <input name = "in1" type = "float" nodename = "_60" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_60" type = "float">
+        <input name = "in1" type = "float" nodename = "_61" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <cos name = "_61" type = "float">
+        <input name = "in" type = "float" nodename = "_62" />
+    </cos>
+    <multiply name = "_62" type = "float">
+        <input name = "in1" type = "float" nodename = "_63" />
+        <input name = "in2" type = "float" nodename = "_58" />
+    </multiply>
+    <swizzle name = "_63" type = "float">
+        <input name = "in" type = "vector2" nodename = "_51" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_64" type = "float">
+        <input name = "in" type = "vector3" nodename = "_65" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <ifequal name = "_65" type = "vector3">
+        <input name = "value1" type = "float" nodename = "_66" />
+        <input name = "value2" type = "float" value = "0" />
+        <input name = "in1" type = "vector3" nodename = "_91" />
+        <input name = "in2" type = "vector3" nodename = "_266" />
+    </ifequal>
+    <ifgreatereq name = "_66" type = "float">
+        <input name = "value1" type = "float" nodename = "_67" />
+        <input name = "value2" type = "float" nodename = "_90" />
+        <input name = "in1" type = "float" value = "0" />
+        <input name = "in2" type = "float" value = "1" />
+    </ifgreatereq>
+    <magnitude name = "_67" type = "float">
+        <input name = "in" type = "vector2" nodename = "_68" />
+    </magnitude>
+    <subtract name = "_68" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_69" />
+        <input name = "in2" type = "vector2" nodename = "_36" />
+    </subtract>
+    <add name = "_69" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_70" />
+        <input name = "in2" type = "vector2" nodename = "_71" />
+    </add>
+    <dot name = "_70" type = "vector2">
+        <input name = "in" type = "vector2" value = "-1,1" />
+    </dot>
+    <combine2 name = "_71" type = "vector2">
+        <input name = "in1" type = "float" nodename = "_72" />
+        <input name = "in2" type = "float" nodename = "_85" />
+    </combine2>
+    <add name = "_72" type = "float">
+        <input name = "in1" type = "float" nodename = "_73" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_73" type = "float">
+        <input name = "in1" type = "float" nodename = "_74" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <sin name = "_74" type = "float">
+        <input name = "in" type = "float" nodename = "_75" />
+    </sin>
+    <multiply name = "_75" type = "float">
+        <input name = "in1" type = "float" nodename = "_76" />
+        <input name = "in2" type = "float" nodename = "_84" />
+    </multiply>
+    <swizzle name = "_76" type = "float">
+        <input name = "in" type = "vector2" nodename = "_77" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <realitykit_fractional name = "_77" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_78" />
+    </realitykit_fractional>
+    <multiply name = "_78" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_79" />
+        <input name = "in2" type = "float" value = "46839.32" />
+    </multiply>
+    <sin name = "_79" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_80" />
+    </sin>
+    <transformmatrix name = "_80" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_81" />
+        <input name = "mat" type = "matrix22" nodename = "_83" />
+    </transformmatrix>
+    <dot name = "_81" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_82" />
+    </dot>
+    <add name = "_82" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_70" />
+        <input name = "in2" type = "vector2" nodename = "_21" />
+    </add>
+    <transpose name = "_83" type = "matrix22">
+        <input name = "in" type = "matrix22" value = "15.27,47.63,99.41,89.98" />
+    </transpose>
+    <dot name = "_84" type = "float">
+        <input name = "in" type = "float" nodename = "_30" />
+    </dot>
+    <add name = "_85" type = "float">
+        <input name = "in1" type = "float" nodename = "_86" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_86" type = "float">
+        <input name = "in1" type = "float" nodename = "_87" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <cos name = "_87" type = "float">
+        <input name = "in" type = "float" nodename = "_88" />
+    </cos>
+    <multiply name = "_88" type = "float">
+        <input name = "in1" type = "float" nodename = "_89" />
+        <input name = "in2" type = "float" nodename = "_84" />
+    </multiply>
+    <swizzle name = "_89" type = "float">
+        <input name = "in" type = "vector2" nodename = "_77" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_90" type = "float">
+        <input name = "in" type = "vector3" nodename = "_91" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <ifequal name = "_91" type = "vector3">
+        <input name = "value1" type = "float" nodename = "_92" />
+        <input name = "value2" type = "float" value = "0" />
+        <input name = "in1" type = "vector3" nodename = "_117" />
+        <input name = "in2" type = "vector3" nodename = "_263" />
+    </ifequal>
+    <ifgreatereq name = "_92" type = "float">
+        <input name = "value1" type = "float" nodename = "_93" />
+        <input name = "value2" type = "float" nodename = "_116" />
+        <input name = "in1" type = "float" value = "0" />
+        <input name = "in2" type = "float" value = "1" />
+    </ifgreatereq>
+    <magnitude name = "_93" type = "float">
+        <input name = "in" type = "vector2" nodename = "_94" />
+    </magnitude>
+    <subtract name = "_94" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_95" />
+        <input name = "in2" type = "vector2" nodename = "_36" />
+    </subtract>
+    <add name = "_95" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_96" />
+        <input name = "in2" type = "vector2" nodename = "_97" />
+    </add>
+    <dot name = "_96" type = "vector2">
+        <input name = "in" type = "vector2" value = "1,0" />
+    </dot>
+    <combine2 name = "_97" type = "vector2">
+        <input name = "in1" type = "float" nodename = "_98" />
+        <input name = "in2" type = "float" nodename = "_111" />
+    </combine2>
+    <add name = "_98" type = "float">
+        <input name = "in1" type = "float" nodename = "_99" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_99" type = "float">
+        <input name = "in1" type = "float" nodename = "_100" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <sin name = "_100" type = "float">
+        <input name = "in" type = "float" nodename = "_101" />
+    </sin>
+    <multiply name = "_101" type = "float">
+        <input name = "in1" type = "float" nodename = "_102" />
+        <input name = "in2" type = "float" nodename = "_110" />
+    </multiply>
+    <swizzle name = "_102" type = "float">
+        <input name = "in" type = "vector2" nodename = "_103" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <realitykit_fractional name = "_103" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_104" />
+    </realitykit_fractional>
+    <multiply name = "_104" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_105" />
+        <input name = "in2" type = "float" value = "46839.32" />
+    </multiply>
+    <sin name = "_105" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_106" />
+    </sin>
+    <transformmatrix name = "_106" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_107" />
+        <input name = "mat" type = "matrix22" nodename = "_109" />
+    </transformmatrix>
+    <dot name = "_107" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_108" />
+    </dot>
+    <add name = "_108" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_96" />
+        <input name = "in2" type = "vector2" nodename = "_21" />
+    </add>
+    <transpose name = "_109" type = "matrix22">
+        <input name = "in" type = "matrix22" value = "15.27,47.63,99.41,89.98" />
+    </transpose>
+    <dot name = "_110" type = "float">
+        <input name = "in" type = "float" nodename = "_30" />
+    </dot>
+    <add name = "_111" type = "float">
+        <input name = "in1" type = "float" nodename = "_112" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_112" type = "float">
+        <input name = "in1" type = "float" nodename = "_113" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <cos name = "_113" type = "float">
+        <input name = "in" type = "float" nodename = "_114" />
+    </cos>
+    <multiply name = "_114" type = "float">
+        <input name = "in1" type = "float" nodename = "_115" />
+        <input name = "in2" type = "float" nodename = "_110" />
+    </multiply>
+    <swizzle name = "_115" type = "float">
+        <input name = "in" type = "vector2" nodename = "_103" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_116" type = "float">
+        <input name = "in" type = "vector3" nodename = "_117" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <ifequal name = "_117" type = "vector3">
+        <input name = "value1" type = "float" nodename = "_118" />
+        <input name = "value2" type = "float" value = "0" />
+        <input name = "in1" type = "vector3" nodename = "_143" />
+        <input name = "in2" type = "vector3" nodename = "_260" />
+    </ifequal>
+    <ifgreatereq name = "_118" type = "float">
+        <input name = "value1" type = "float" nodename = "_119" />
+        <input name = "value2" type = "float" nodename = "_142" />
+        <input name = "in1" type = "float" value = "0" />
+        <input name = "in2" type = "float" value = "1" />
+    </ifgreatereq>
+    <magnitude name = "_119" type = "float">
+        <input name = "in" type = "vector2" nodename = "_120" />
+    </magnitude>
+    <subtract name = "_120" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_121" />
+        <input name = "in2" type = "vector2" nodename = "_36" />
+    </subtract>
+    <add name = "_121" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_122" />
+        <input name = "in2" type = "vector2" nodename = "_123" />
+    </add>
+    <dot name = "_122" type = "vector2">
+        <input name = "in" type = "vector2" value = "0,0" />
+    </dot>
+    <combine2 name = "_123" type = "vector2">
+        <input name = "in1" type = "float" nodename = "_124" />
+        <input name = "in2" type = "float" nodename = "_137" />
+    </combine2>
+    <add name = "_124" type = "float">
+        <input name = "in1" type = "float" nodename = "_125" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_125" type = "float">
+        <input name = "in1" type = "float" nodename = "_126" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <sin name = "_126" type = "float">
+        <input name = "in" type = "float" nodename = "_127" />
+    </sin>
+    <multiply name = "_127" type = "float">
+        <input name = "in1" type = "float" nodename = "_128" />
+        <input name = "in2" type = "float" nodename = "_136" />
+    </multiply>
+    <swizzle name = "_128" type = "float">
+        <input name = "in" type = "vector2" nodename = "_129" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <realitykit_fractional name = "_129" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_130" />
+    </realitykit_fractional>
+    <multiply name = "_130" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_131" />
+        <input name = "in2" type = "float" value = "46839.32" />
+    </multiply>
+    <sin name = "_131" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_132" />
+    </sin>
+    <transformmatrix name = "_132" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_133" />
+        <input name = "mat" type = "matrix22" nodename = "_135" />
+    </transformmatrix>
+    <dot name = "_133" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_134" />
+    </dot>
+    <add name = "_134" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_122" />
+        <input name = "in2" type = "vector2" nodename = "_21" />
+    </add>
+    <transpose name = "_135" type = "matrix22">
+        <input name = "in" type = "matrix22" value = "15.27,47.63,99.41,89.98" />
+    </transpose>
+    <dot name = "_136" type = "float">
+        <input name = "in" type = "float" nodename = "_30" />
+    </dot>
+    <add name = "_137" type = "float">
+        <input name = "in1" type = "float" nodename = "_138" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_138" type = "float">
+        <input name = "in1" type = "float" nodename = "_139" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <cos name = "_139" type = "float">
+        <input name = "in" type = "float" nodename = "_140" />
+    </cos>
+    <multiply name = "_140" type = "float">
+        <input name = "in1" type = "float" nodename = "_141" />
+        <input name = "in2" type = "float" nodename = "_136" />
+    </multiply>
+    <swizzle name = "_141" type = "float">
+        <input name = "in" type = "vector2" nodename = "_129" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_142" type = "float">
+        <input name = "in" type = "vector3" nodename = "_143" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <ifequal name = "_143" type = "vector3">
+        <input name = "value1" type = "float" nodename = "_144" />
+        <input name = "value2" type = "float" value = "0" />
+        <input name = "in1" type = "vector3" nodename = "_169" />
+        <input name = "in2" type = "vector3" nodename = "_257" />
+    </ifequal>
+    <ifgreatereq name = "_144" type = "float">
+        <input name = "value1" type = "float" nodename = "_145" />
+        <input name = "value2" type = "float" nodename = "_168" />
+        <input name = "in1" type = "float" value = "0" />
+        <input name = "in2" type = "float" value = "1" />
+    </ifgreatereq>
+    <magnitude name = "_145" type = "float">
+        <input name = "in" type = "vector2" nodename = "_146" />
+    </magnitude>
+    <subtract name = "_146" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_147" />
+        <input name = "in2" type = "vector2" nodename = "_36" />
+    </subtract>
+    <add name = "_147" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_148" />
+        <input name = "in2" type = "vector2" nodename = "_149" />
+    </add>
+    <dot name = "_148" type = "vector2">
+        <input name = "in" type = "vector2" value = "-1,0" />
+    </dot>
+    <combine2 name = "_149" type = "vector2">
+        <input name = "in1" type = "float" nodename = "_150" />
+        <input name = "in2" type = "float" nodename = "_163" />
+    </combine2>
+    <add name = "_150" type = "float">
+        <input name = "in1" type = "float" nodename = "_151" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_151" type = "float">
+        <input name = "in1" type = "float" nodename = "_152" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <sin name = "_152" type = "float">
+        <input name = "in" type = "float" nodename = "_153" />
+    </sin>
+    <multiply name = "_153" type = "float">
+        <input name = "in1" type = "float" nodename = "_154" />
+        <input name = "in2" type = "float" nodename = "_162" />
+    </multiply>
+    <swizzle name = "_154" type = "float">
+        <input name = "in" type = "vector2" nodename = "_155" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <realitykit_fractional name = "_155" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_156" />
+    </realitykit_fractional>
+    <multiply name = "_156" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_157" />
+        <input name = "in2" type = "float" value = "46839.32" />
+    </multiply>
+    <sin name = "_157" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_158" />
+    </sin>
+    <transformmatrix name = "_158" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_159" />
+        <input name = "mat" type = "matrix22" nodename = "_161" />
+    </transformmatrix>
+    <dot name = "_159" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_160" />
+    </dot>
+    <add name = "_160" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_148" />
+        <input name = "in2" type = "vector2" nodename = "_21" />
+    </add>
+    <transpose name = "_161" type = "matrix22">
+        <input name = "in" type = "matrix22" value = "15.27,47.63,99.41,89.98" />
+    </transpose>
+    <dot name = "_162" type = "float">
+        <input name = "in" type = "float" nodename = "_30" />
+    </dot>
+    <add name = "_163" type = "float">
+        <input name = "in1" type = "float" nodename = "_164" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_164" type = "float">
+        <input name = "in1" type = "float" nodename = "_165" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <cos name = "_165" type = "float">
+        <input name = "in" type = "float" nodename = "_166" />
+    </cos>
+    <multiply name = "_166" type = "float">
+        <input name = "in1" type = "float" nodename = "_167" />
+        <input name = "in2" type = "float" nodename = "_162" />
+    </multiply>
+    <swizzle name = "_167" type = "float">
+        <input name = "in" type = "vector2" nodename = "_155" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_168" type = "float">
+        <input name = "in" type = "vector3" nodename = "_169" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <ifequal name = "_169" type = "vector3">
+        <input name = "value1" type = "float" nodename = "_170" />
+        <input name = "value2" type = "float" value = "0" />
+        <input name = "in1" type = "vector3" nodename = "_195" />
+        <input name = "in2" type = "vector3" nodename = "_254" />
+    </ifequal>
+    <ifgreatereq name = "_170" type = "float">
+        <input name = "value1" type = "float" nodename = "_171" />
+        <input name = "value2" type = "float" nodename = "_194" />
+        <input name = "in1" type = "float" value = "0" />
+        <input name = "in2" type = "float" value = "1" />
+    </ifgreatereq>
+    <magnitude name = "_171" type = "float">
+        <input name = "in" type = "vector2" nodename = "_172" />
+    </magnitude>
+    <subtract name = "_172" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_173" />
+        <input name = "in2" type = "vector2" nodename = "_36" />
+    </subtract>
+    <add name = "_173" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_174" />
+        <input name = "in2" type = "vector2" nodename = "_175" />
+    </add>
+    <dot name = "_174" type = "vector2">
+        <input name = "in" type = "vector2" value = "1,-1" />
+    </dot>
+    <combine2 name = "_175" type = "vector2">
+        <input name = "in1" type = "float" nodename = "_176" />
+        <input name = "in2" type = "float" nodename = "_189" />
+    </combine2>
+    <add name = "_176" type = "float">
+        <input name = "in1" type = "float" nodename = "_177" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_177" type = "float">
+        <input name = "in1" type = "float" nodename = "_178" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <sin name = "_178" type = "float">
+        <input name = "in" type = "float" nodename = "_179" />
+    </sin>
+    <multiply name = "_179" type = "float">
+        <input name = "in1" type = "float" nodename = "_180" />
+        <input name = "in2" type = "float" nodename = "_188" />
+    </multiply>
+    <swizzle name = "_180" type = "float">
+        <input name = "in" type = "vector2" nodename = "_181" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <realitykit_fractional name = "_181" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_182" />
+    </realitykit_fractional>
+    <multiply name = "_182" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_183" />
+        <input name = "in2" type = "float" value = "46839.32" />
+    </multiply>
+    <sin name = "_183" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_184" />
+    </sin>
+    <transformmatrix name = "_184" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_185" />
+        <input name = "mat" type = "matrix22" nodename = "_187" />
+    </transformmatrix>
+    <dot name = "_185" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_186" />
+    </dot>
+    <add name = "_186" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_174" />
+        <input name = "in2" type = "vector2" nodename = "_21" />
+    </add>
+    <transpose name = "_187" type = "matrix22">
+        <input name = "in" type = "matrix22" value = "15.27,47.63,99.41,89.98" />
+    </transpose>
+    <dot name = "_188" type = "float">
+        <input name = "in" type = "float" nodename = "_30" />
+    </dot>
+    <add name = "_189" type = "float">
+        <input name = "in1" type = "float" nodename = "_190" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_190" type = "float">
+        <input name = "in1" type = "float" nodename = "_191" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <cos name = "_191" type = "float">
+        <input name = "in" type = "float" nodename = "_192" />
+    </cos>
+    <multiply name = "_192" type = "float">
+        <input name = "in1" type = "float" nodename = "_193" />
+        <input name = "in2" type = "float" nodename = "_188" />
+    </multiply>
+    <swizzle name = "_193" type = "float">
+        <input name = "in" type = "vector2" nodename = "_181" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_194" type = "float">
+        <input name = "in" type = "vector3" nodename = "_195" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <ifequal name = "_195" type = "vector3">
+        <input name = "value1" type = "float" nodename = "_196" />
+        <input name = "value2" type = "float" value = "0" />
+        <input name = "in1" type = "vector3" nodename = "_221" />
+        <input name = "in2" type = "vector3" nodename = "_251" />
+    </ifequal>
+    <ifgreatereq name = "_196" type = "float">
+        <input name = "value1" type = "float" nodename = "_197" />
+        <input name = "value2" type = "float" nodename = "_220" />
+        <input name = "in1" type = "float" value = "0" />
+        <input name = "in2" type = "float" value = "1" />
+    </ifgreatereq>
+    <magnitude name = "_197" type = "float">
+        <input name = "in" type = "vector2" nodename = "_198" />
+    </magnitude>
+    <subtract name = "_198" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_199" />
+        <input name = "in2" type = "vector2" nodename = "_36" />
+    </subtract>
+    <add name = "_199" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_200" />
+        <input name = "in2" type = "vector2" nodename = "_201" />
+    </add>
+    <dot name = "_200" type = "vector2">
+        <input name = "in" type = "vector2" value = "0,-1" />
+    </dot>
+    <combine2 name = "_201" type = "vector2">
+        <input name = "in1" type = "float" nodename = "_202" />
+        <input name = "in2" type = "float" nodename = "_215" />
+    </combine2>
+    <add name = "_202" type = "float">
+        <input name = "in1" type = "float" nodename = "_203" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_203" type = "float">
+        <input name = "in1" type = "float" nodename = "_204" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <sin name = "_204" type = "float">
+        <input name = "in" type = "float" nodename = "_205" />
+    </sin>
+    <multiply name = "_205" type = "float">
+        <input name = "in1" type = "float" nodename = "_206" />
+        <input name = "in2" type = "float" nodename = "_214" />
+    </multiply>
+    <swizzle name = "_206" type = "float">
+        <input name = "in" type = "vector2" nodename = "_207" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <realitykit_fractional name = "_207" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_208" />
+    </realitykit_fractional>
+    <multiply name = "_208" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_209" />
+        <input name = "in2" type = "float" value = "46839.32" />
+    </multiply>
+    <sin name = "_209" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_210" />
+    </sin>
+    <transformmatrix name = "_210" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_211" />
+        <input name = "mat" type = "matrix22" nodename = "_213" />
+    </transformmatrix>
+    <dot name = "_211" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_212" />
+    </dot>
+    <add name = "_212" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_200" />
+        <input name = "in2" type = "vector2" nodename = "_21" />
+    </add>
+    <transpose name = "_213" type = "matrix22">
+        <input name = "in" type = "matrix22" value = "15.27,47.63,99.41,89.98" />
+    </transpose>
+    <dot name = "_214" type = "float">
+        <input name = "in" type = "float" nodename = "_30" />
+    </dot>
+    <add name = "_215" type = "float">
+        <input name = "in1" type = "float" nodename = "_216" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_216" type = "float">
+        <input name = "in1" type = "float" nodename = "_217" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <cos name = "_217" type = "float">
+        <input name = "in" type = "float" nodename = "_218" />
+    </cos>
+    <multiply name = "_218" type = "float">
+        <input name = "in1" type = "float" nodename = "_219" />
+        <input name = "in2" type = "float" nodename = "_214" />
+    </multiply>
+    <swizzle name = "_219" type = "float">
+        <input name = "in" type = "vector2" nodename = "_207" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_220" type = "float">
+        <input name = "in" type = "vector3" nodename = "_221" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <ifequal name = "_221" type = "vector3">
+        <input name = "value1" type = "float" nodename = "_222" />
+        <input name = "value2" type = "float" value = "0" />
+        <input name = "in1" type = "vector3" nodename = "_247" />
+        <input name = "in2" type = "vector3" nodename = "_248" />
+    </ifequal>
+    <ifgreatereq name = "_222" type = "float">
+        <input name = "value1" type = "float" nodename = "_223" />
+        <input name = "value2" type = "float" nodename = "_246" />
+        <input name = "in1" type = "float" value = "0" />
+        <input name = "in2" type = "float" value = "1" />
+    </ifgreatereq>
+    <magnitude name = "_223" type = "float">
+        <input name = "in" type = "vector2" nodename = "_224" />
+    </magnitude>
+    <subtract name = "_224" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_225" />
+        <input name = "in2" type = "vector2" nodename = "_36" />
+    </subtract>
+    <add name = "_225" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_226" />
+        <input name = "in2" type = "vector2" nodename = "_227" />
+    </add>
+    <dot name = "_226" type = "vector2">
+        <input name = "in" type = "vector2" value = "-1,-1" />
+    </dot>
+    <combine2 name = "_227" type = "vector2">
+        <input name = "in1" type = "float" nodename = "_228" />
+        <input name = "in2" type = "float" nodename = "_241" />
+    </combine2>
+    <add name = "_228" type = "float">
+        <input name = "in1" type = "float" nodename = "_229" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_229" type = "float">
+        <input name = "in1" type = "float" nodename = "_230" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <sin name = "_230" type = "float">
+        <input name = "in" type = "float" nodename = "_231" />
+    </sin>
+    <multiply name = "_231" type = "float">
+        <input name = "in1" type = "float" nodename = "_232" />
+        <input name = "in2" type = "float" nodename = "_240" />
+    </multiply>
+    <swizzle name = "_232" type = "float">
+        <input name = "in" type = "vector2" nodename = "_233" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <realitykit_fractional name = "_233" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_234" />
+    </realitykit_fractional>
+    <multiply name = "_234" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_235" />
+        <input name = "in2" type = "float" value = "46839.32" />
+    </multiply>
+    <sin name = "_235" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_236" />
+    </sin>
+    <transformmatrix name = "_236" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_237" />
+        <input name = "mat" type = "matrix22" nodename = "_239" />
+    </transformmatrix>
+    <dot name = "_237" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_238" />
+    </dot>
+    <add name = "_238" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_226" />
+        <input name = "in2" type = "vector2" nodename = "_21" />
+    </add>
+    <transpose name = "_239" type = "matrix22">
+        <input name = "in" type = "matrix22" value = "15.27,47.63,99.41,89.98" />
+    </transpose>
+    <dot name = "_240" type = "float">
+        <input name = "in" type = "float" nodename = "_30" />
+    </dot>
+    <add name = "_241" type = "float">
+        <input name = "in1" type = "float" nodename = "_242" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </add>
+    <multiply name = "_242" type = "float">
+        <input name = "in1" type = "float" nodename = "_243" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </multiply>
+    <cos name = "_243" type = "float">
+        <input name = "in" type = "float" nodename = "_244" />
+    </cos>
+    <multiply name = "_244" type = "float">
+        <input name = "in1" type = "float" nodename = "_245" />
+        <input name = "in2" type = "float" nodename = "_240" />
+    </multiply>
+    <swizzle name = "_245" type = "float">
+        <input name = "in" type = "vector2" nodename = "_233" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_246" type = "float">
+        <input name = "in" type = "vector3" nodename = "_247" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <dot name = "_247" type = "vector3">
+        <input name = "in" type = "vector3" value = "8,0,0" />
+    </dot>
+    <combine3 name = "_248" type = "vector3">
+        <input name = "in1" type = "float" nodename = "_223" />
+        <input name = "in2" type = "float" nodename = "_249" />
+        <input name = "in3" type = "float" nodename = "_250" />
+    </combine3>
+    <swizzle name = "_249" type = "float">
+        <input name = "in" type = "vector2" nodename = "_227" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_250" type = "float">
+        <input name = "in" type = "vector2" nodename = "_227" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <combine3 name = "_251" type = "vector3">
+        <input name = "in1" type = "float" nodename = "_197" />
+        <input name = "in2" type = "float" nodename = "_252" />
+        <input name = "in3" type = "float" nodename = "_253" />
+    </combine3>
+    <swizzle name = "_252" type = "float">
+        <input name = "in" type = "vector2" nodename = "_201" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_253" type = "float">
+        <input name = "in" type = "vector2" nodename = "_201" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <combine3 name = "_254" type = "vector3">
+        <input name = "in1" type = "float" nodename = "_171" />
+        <input name = "in2" type = "float" nodename = "_255" />
+        <input name = "in3" type = "float" nodename = "_256" />
+    </combine3>
+    <swizzle name = "_255" type = "float">
+        <input name = "in" type = "vector2" nodename = "_175" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_256" type = "float">
+        <input name = "in" type = "vector2" nodename = "_175" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <combine3 name = "_257" type = "vector3">
+        <input name = "in1" type = "float" nodename = "_145" />
+        <input name = "in2" type = "float" nodename = "_258" />
+        <input name = "in3" type = "float" nodename = "_259" />
+    </combine3>
+    <swizzle name = "_258" type = "float">
+        <input name = "in" type = "vector2" nodename = "_149" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_259" type = "float">
+        <input name = "in" type = "vector2" nodename = "_149" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <combine3 name = "_260" type = "vector3">
+        <input name = "in1" type = "float" nodename = "_119" />
+        <input name = "in2" type = "float" nodename = "_261" />
+        <input name = "in3" type = "float" nodename = "_262" />
+    </combine3>
+    <swizzle name = "_261" type = "float">
+        <input name = "in" type = "vector2" nodename = "_123" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_262" type = "float">
+        <input name = "in" type = "vector2" nodename = "_123" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <combine3 name = "_263" type = "vector3">
+        <input name = "in1" type = "float" nodename = "_93" />
+        <input name = "in2" type = "float" nodename = "_264" />
+        <input name = "in3" type = "float" nodename = "_265" />
+    </combine3>
+    <swizzle name = "_264" type = "float">
+        <input name = "in" type = "vector2" nodename = "_97" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_265" type = "float">
+        <input name = "in" type = "vector2" nodename = "_97" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <combine3 name = "_266" type = "vector3">
+        <input name = "in1" type = "float" nodename = "_67" />
+        <input name = "in2" type = "float" nodename = "_267" />
+        <input name = "in3" type = "float" nodename = "_268" />
+    </combine3>
+    <swizzle name = "_267" type = "float">
+        <input name = "in" type = "vector2" nodename = "_71" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_268" type = "float">
+        <input name = "in" type = "vector2" nodename = "_71" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <combine3 name = "_269" type = "vector3">
+        <input name = "in1" type = "float" nodename = "_41" />
+        <input name = "in2" type = "float" nodename = "_270" />
+        <input name = "in3" type = "float" nodename = "_271" />
+    </combine3>
+    <swizzle name = "_270" type = "float">
+        <input name = "in" type = "vector2" nodename = "_45" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_271" type = "float">
+        <input name = "in" type = "vector2" nodename = "_45" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <combine3 name = "_272" type = "vector3">
+        <input name = "in1" type = "float" nodename = "_5" />
+        <input name = "in2" type = "float" nodename = "_273" />
+        <input name = "in3" type = "float" nodename = "_274" />
+    </combine3>
+    <swizzle name = "_273" type = "float">
+        <input name = "in" type = "vector2" nodename = "_9" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_274" type = "float">
+        <input name = "in" type = "vector2" nodename = "_9" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <dot name = "_275" type = "float">
+        <input name = "in" type = "float" nodename = "_276" />
+    </dot>
+    <swizzle name = "_276" type = "float">
+        <input name = "in" type = "vector3" nodename = "_3" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <dot name = "_277" type = "float">
+        <input name = "in" type = "float" nodename = "_278" />
+    </dot>
+    <magnitude name = "_278" type = "float">
+        <input name = "in" type = "vector2" nodename = "_279" />
+    </magnitude>
+    <subtract name = "_279" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_280" />
+        <input name = "in2" type = "vector2" nodename = "_281" />
+    </subtract>
+    <dot name = "_280" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_536" />
+    </dot>
+    <dot name = "_281" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_282" />
+    </dot>
+    <combine2 name = "_282" type = "vector2">
+        <input name = "in1" type = "float" value = "0.5" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </combine2>
+    <subtract name = "_283" type = "float">
+        <input name = "in2" type = "float" nodename = "_522" />
+        <input name = "in1" type = "float" value = "1" />
+    </subtract>
+    <sin name = "_284" type = "float">
+        <input name = "in" type = "float" nodename = "_507" />
+    </sin>
+    <multiply name = "_285" type = "float">
+        <input name = "in1" type = "float" nodename = "_283" />
+        <input name = "in2" type = "float" nodename = "_WaveCount" />
+    </multiply>
+    <absval name = "_286" type = "float">
+        <input name = "in" type = "float" nodename = "_284" />
+    </absval>
+    <dot name = "_287" type = "float">
+        <input name = "in" type = "float" nodename = "_288" />
+    </dot>
+    <dot name = "_288" type = "float">
+        <input name = "in" type = "float" nodename = "_289" />
+    </dot>
+    <add name = "_289" type = "float">
+        <input name = "in1" type = "float" nodename = "_290" />
+        <input name = "in2" type = "float" nodename = "_430" />
+    </add>
+    <add name = "_290" type = "float">
+        <input name = "in1" type = "float" nodename = "_291" />
+        <input name = "in2" type = "float" nodename = "_364" />
+    </add>
+    <add name = "_291" type = "float">
+        <input name = "in1" type = "float" nodename = "_292" />
+        <input name = "in2" type = "float" nodename = "_293" />
+    </add>
+    <dot name = "_292" type = "float">
+        <input name = "in" type = "float" value = "0" />
+    </dot>
+    <multiply name = "_293" type = "float">
+        <input name = "in1" type = "float" nodename = "_294" />
+        <input name = "in2" type = "float" nodename = "_362" />
+    </multiply>
+    <add name = "_294" type = "float">
+        <input name = "in1" type = "float" nodename = "_295" />
+        <input name = "in2" type = "float" nodename = "_340" />
+    </add>
+    <multiply name = "_295" type = "float">
+        <input name = "in1" type = "float" nodename = "_296" />
+        <input name = "in2" type = "float" nodename = "_318" />
+    </multiply>
+    <subtract name = "_296" type = "float">
+        <input name = "in1" type = "float" value = "1" />
+        <input name = "in2" type = "float" nodename = "_297" />
+    </subtract>
+    <dot name = "_297" type = "float">
+        <input name = "in" type = "float" nodename = "_298" />
+    </dot>
+    <swizzle name = "_298" type = "float">
+        <input name = "in" type = "vector2" nodename = "_299" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <multiply name = "_299" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_300" />
+        <input name = "in2" type = "vector2" nodename = "_316" />
+    </multiply>
+    <multiply name = "_300" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_301" />
+        <input name = "in2" type = "vector2" nodename = "_301" />
+    </multiply>
+    <realitykit_fractional name = "_301" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_302" />
+    </realitykit_fractional>
+    <dot name = "_302" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_303" />
+    </dot>
+    <combine2 name = "_303" type = "vector2">
+        <input name = "in1" type = "float" nodename = "_304" />
+        <input name = "in2" type = "float" nodename = "_313" />
+    </combine2>
+    <divide name = "_304" type = "float">
+        <input name = "in1" type = "float" nodename = "_305" />
+        <input name = "in2" type = "float" nodename = "_312" />
+    </divide>
+    <multiply name = "_305" type = "float">
+        <input name = "in1" type = "float" nodename = "_306" />
+        <input name = "in2" type = "float" nodename = "_311" />
+    </multiply>
+    <swizzle name = "_306" type = "float">
+        <input name = "in" type = "vector2" nodename = "_307" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <dot name = "_307" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_310" />
+    </dot>
+    <texcoord name = "_308" type = "vector2">
+        <input name = "index" type = "integer" value = "0" />
+    </texcoord>
+    <multiply name = "_309" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_308" />
+        <input name = "in2" type = "vector2" value = "1,-1" />
+    </multiply>
+    <add name = "_310" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_309" />
+        <input name = "in2" type = "vector2" value = "0,1" />
+    </add>
+    <dot name = "_311" type = "float">
+        <input name = "in" type = "float" value = "20" />
+    </dot>
+    <power name = "_312" type = "float">
+        <input name = "in1" type = "float" value = "2" />
+        <input name = "in2" type = "float" value = "0" />
+    </power>
+    <divide name = "_313" type = "float">
+        <input name = "in1" type = "float" nodename = "_314" />
+        <input name = "in2" type = "float" nodename = "_312" />
+    </divide>
+    <multiply name = "_314" type = "float">
+        <input name = "in1" type = "float" nodename = "_315" />
+        <input name = "in2" type = "float" nodename = "_311" />
+    </multiply>
+    <swizzle name = "_315" type = "float">
+        <input name = "in" type = "vector2" nodename = "_307" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <subtract name = "_316" type = "vector2">
+        <input name = "in1" type = "vector2" value = "3,3" />
+        <input name = "in2" type = "vector2" nodename = "_317" />
+    </subtract>
+    <multiply name = "_317" type = "vector2">
+        <input name = "in1" type = "vector2" value = "2,2" />
+        <input name = "in2" type = "vector2" nodename = "_301" />
+    </multiply>
+    <dot name = "_318" type = "float">
+        <input name = "in" type = "float" nodename = "_319" />
+    </dot>
+    <add name = "_319" type = "float">
+        <input name = "in1" type = "float" nodename = "_320" />
+        <input name = "in2" type = "float" nodename = "_332" />
+    </add>
+    <multiply name = "_320" type = "float">
+        <input name = "in1" type = "float" nodename = "_321" />
+        <input name = "in2" type = "float" nodename = "_324" />
+    </multiply>
+    <subtract name = "_321" type = "float">
+        <input name = "in1" type = "float" value = "1" />
+        <input name = "in2" type = "float" nodename = "_322" />
+    </subtract>
+    <dot name = "_322" type = "float">
+        <input name = "in" type = "float" nodename = "_323" />
+    </dot>
+    <swizzle name = "_323" type = "float">
+        <input name = "in" type = "vector2" nodename = "_299" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <dot name = "_324" type = "float">
+        <input name = "in" type = "float" nodename = "_325" />
+    </dot>
+    <realitykit_fractional name = "_325" type = "float">
+        <input name = "in" type = "float" nodename = "_326" />
+    </realitykit_fractional>
+    <multiply name = "_326" type = "float">
+        <input name = "in1" type = "float" nodename = "_327" />
+        <input name = "in2" type = "float" value = "43758.55" />
+    </multiply>
+    <sin name = "_327" type = "float">
+        <input name = "in" type = "float" nodename = "_328" />
+    </sin>
+    <dotproduct name = "_328" type = "float">
+        <input name = "in1" type = "vector2" nodename = "_329" />
+        <input name = "in2" type = "vector2" value = "12.9898,78.233" />
+    </dotproduct>
+    <dot name = "_329" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_330" />
+    </dot>
+    <add name = "_330" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_331" />
+        <input name = "in2" type = "vector2" value = "0,0" />
+    </add>
+    <floor name = "_331" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_302" />
+    </floor>
+    <multiply name = "_332" type = "float">
+        <input name = "in1" type = "float" nodename = "_322" />
+        <input name = "in2" type = "float" nodename = "_333" />
+    </multiply>
+    <dot name = "_333" type = "float">
+        <input name = "in" type = "float" nodename = "_334" />
+    </dot>
+    <realitykit_fractional name = "_334" type = "float">
+        <input name = "in" type = "float" nodename = "_335" />
+    </realitykit_fractional>
+    <multiply name = "_335" type = "float">
+        <input name = "in1" type = "float" nodename = "_336" />
+        <input name = "in2" type = "float" value = "43758.55" />
+    </multiply>
+    <sin name = "_336" type = "float">
+        <input name = "in" type = "float" nodename = "_337" />
+    </sin>
+    <dotproduct name = "_337" type = "float">
+        <input name = "in1" type = "vector2" nodename = "_338" />
+        <input name = "in2" type = "vector2" value = "12.9898,78.233" />
+    </dotproduct>
+    <dot name = "_338" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_339" />
+    </dot>
+    <add name = "_339" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_331" />
+        <input name = "in2" type = "vector2" value = "1,0" />
+    </add>
+    <multiply name = "_340" type = "float">
+        <input name = "in1" type = "float" nodename = "_297" />
+        <input name = "in2" type = "float" nodename = "_341" />
+    </multiply>
+    <dot name = "_341" type = "float">
+        <input name = "in" type = "float" nodename = "_342" />
+    </dot>
+    <add name = "_342" type = "float">
+        <input name = "in1" type = "float" nodename = "_343" />
+        <input name = "in2" type = "float" nodename = "_354" />
+    </add>
+    <multiply name = "_343" type = "float">
+        <input name = "in1" type = "float" nodename = "_344" />
+        <input name = "in2" type = "float" nodename = "_347" />
+    </multiply>
+    <subtract name = "_344" type = "float">
+        <input name = "in1" type = "float" value = "1" />
+        <input name = "in2" type = "float" nodename = "_345" />
+    </subtract>
+    <dot name = "_345" type = "float">
+        <input name = "in" type = "float" nodename = "_346" />
+    </dot>
+    <swizzle name = "_346" type = "float">
+        <input name = "in" type = "vector2" nodename = "_299" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <dot name = "_347" type = "float">
+        <input name = "in" type = "float" nodename = "_348" />
+    </dot>
+    <realitykit_fractional name = "_348" type = "float">
+        <input name = "in" type = "float" nodename = "_349" />
+    </realitykit_fractional>
+    <multiply name = "_349" type = "float">
+        <input name = "in1" type = "float" nodename = "_350" />
+        <input name = "in2" type = "float" value = "43758.55" />
+    </multiply>
+    <sin name = "_350" type = "float">
+        <input name = "in" type = "float" nodename = "_351" />
+    </sin>
+    <dotproduct name = "_351" type = "float">
+        <input name = "in1" type = "vector2" nodename = "_352" />
+        <input name = "in2" type = "vector2" value = "12.9898,78.233" />
+    </dotproduct>
+    <dot name = "_352" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_353" />
+    </dot>
+    <add name = "_353" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_331" />
+        <input name = "in2" type = "vector2" value = "0,1" />
+    </add>
+    <multiply name = "_354" type = "float">
+        <input name = "in1" type = "float" nodename = "_345" />
+        <input name = "in2" type = "float" nodename = "_355" />
+    </multiply>
+    <dot name = "_355" type = "float">
+        <input name = "in" type = "float" nodename = "_356" />
+    </dot>
+    <realitykit_fractional name = "_356" type = "float">
+        <input name = "in" type = "float" nodename = "_357" />
+    </realitykit_fractional>
+    <multiply name = "_357" type = "float">
+        <input name = "in1" type = "float" nodename = "_358" />
+        <input name = "in2" type = "float" value = "43758.55" />
+    </multiply>
+    <sin name = "_358" type = "float">
+        <input name = "in" type = "float" nodename = "_359" />
+    </sin>
+    <dotproduct name = "_359" type = "float">
+        <input name = "in1" type = "vector2" nodename = "_360" />
+        <input name = "in2" type = "vector2" value = "12.9898,78.233" />
+    </dotproduct>
+    <dot name = "_360" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_361" />
+    </dot>
+    <add name = "_361" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_331" />
+        <input name = "in2" type = "vector2" value = "1,1" />
+    </add>
+    <power name = "_362" type = "float">
+        <input name = "in1" type = "float" value = "0.5" />
+        <input name = "in2" type = "float" nodename = "_363" />
+    </power>
+    <subtract name = "_363" type = "float">
+        <input name = "in1" type = "float" value = "3" />
+        <input name = "in2" type = "float" value = "0" />
+    </subtract>
+    <multiply name = "_364" type = "float">
+        <input name = "in1" type = "float" nodename = "_365" />
+        <input name = "in2" type = "float" nodename = "_428" />
+    </multiply>
+    <add name = "_365" type = "float">
+        <input name = "in1" type = "float" nodename = "_366" />
+        <input name = "in2" type = "float" nodename = "_406" />
+    </add>
+    <multiply name = "_366" type = "float">
+        <input name = "in1" type = "float" nodename = "_367" />
+        <input name = "in2" type = "float" nodename = "_384" />
+    </multiply>
+    <subtract name = "_367" type = "float">
+        <input name = "in1" type = "float" value = "1" />
+        <input name = "in2" type = "float" nodename = "_368" />
+    </subtract>
+    <dot name = "_368" type = "float">
+        <input name = "in" type = "float" nodename = "_369" />
+    </dot>
+    <swizzle name = "_369" type = "float">
+        <input name = "in" type = "vector2" nodename = "_370" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <multiply name = "_370" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_371" />
+        <input name = "in2" type = "vector2" nodename = "_382" />
+    </multiply>
+    <multiply name = "_371" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_372" />
+        <input name = "in2" type = "vector2" nodename = "_372" />
+    </multiply>
+    <realitykit_fractional name = "_372" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_373" />
+    </realitykit_fractional>
+    <dot name = "_373" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_374" />
+    </dot>
+    <combine2 name = "_374" type = "vector2">
+        <input name = "in1" type = "float" nodename = "_375" />
+        <input name = "in2" type = "float" nodename = "_379" />
+    </combine2>
+    <divide name = "_375" type = "float">
+        <input name = "in1" type = "float" nodename = "_376" />
+        <input name = "in2" type = "float" nodename = "_378" />
+    </divide>
+    <multiply name = "_376" type = "float">
+        <input name = "in1" type = "float" nodename = "_377" />
+        <input name = "in2" type = "float" nodename = "_311" />
+    </multiply>
+    <swizzle name = "_377" type = "float">
+        <input name = "in" type = "vector2" nodename = "_307" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <power name = "_378" type = "float">
+        <input name = "in1" type = "float" value = "2" />
+        <input name = "in2" type = "float" value = "1" />
+    </power>
+    <divide name = "_379" type = "float">
+        <input name = "in1" type = "float" nodename = "_380" />
+        <input name = "in2" type = "float" nodename = "_378" />
+    </divide>
+    <multiply name = "_380" type = "float">
+        <input name = "in1" type = "float" nodename = "_381" />
+        <input name = "in2" type = "float" nodename = "_311" />
+    </multiply>
+    <swizzle name = "_381" type = "float">
+        <input name = "in" type = "vector2" nodename = "_307" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <subtract name = "_382" type = "vector2">
+        <input name = "in1" type = "vector2" value = "3,3" />
+        <input name = "in2" type = "vector2" nodename = "_383" />
+    </subtract>
+    <multiply name = "_383" type = "vector2">
+        <input name = "in1" type = "vector2" value = "2,2" />
+        <input name = "in2" type = "vector2" nodename = "_372" />
+    </multiply>
+    <dot name = "_384" type = "float">
+        <input name = "in" type = "float" nodename = "_385" />
+    </dot>
+    <add name = "_385" type = "float">
+        <input name = "in1" type = "float" nodename = "_386" />
+        <input name = "in2" type = "float" nodename = "_398" />
+    </add>
+    <multiply name = "_386" type = "float">
+        <input name = "in1" type = "float" nodename = "_387" />
+        <input name = "in2" type = "float" nodename = "_390" />
+    </multiply>
+    <subtract name = "_387" type = "float">
+        <input name = "in1" type = "float" value = "1" />
+        <input name = "in2" type = "float" nodename = "_388" />
+    </subtract>
+    <dot name = "_388" type = "float">
+        <input name = "in" type = "float" nodename = "_389" />
+    </dot>
+    <swizzle name = "_389" type = "float">
+        <input name = "in" type = "vector2" nodename = "_370" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <dot name = "_390" type = "float">
+        <input name = "in" type = "float" nodename = "_391" />
+    </dot>
+    <realitykit_fractional name = "_391" type = "float">
+        <input name = "in" type = "float" nodename = "_392" />
+    </realitykit_fractional>
+    <multiply name = "_392" type = "float">
+        <input name = "in1" type = "float" nodename = "_393" />
+        <input name = "in2" type = "float" value = "43758.55" />
+    </multiply>
+    <sin name = "_393" type = "float">
+        <input name = "in" type = "float" nodename = "_394" />
+    </sin>
+    <dotproduct name = "_394" type = "float">
+        <input name = "in1" type = "vector2" nodename = "_395" />
+        <input name = "in2" type = "vector2" value = "12.9898,78.233" />
+    </dotproduct>
+    <dot name = "_395" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_396" />
+    </dot>
+    <add name = "_396" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_397" />
+        <input name = "in2" type = "vector2" value = "0,0" />
+    </add>
+    <floor name = "_397" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_373" />
+    </floor>
+    <multiply name = "_398" type = "float">
+        <input name = "in1" type = "float" nodename = "_388" />
+        <input name = "in2" type = "float" nodename = "_399" />
+    </multiply>
+    <dot name = "_399" type = "float">
+        <input name = "in" type = "float" nodename = "_400" />
+    </dot>
+    <realitykit_fractional name = "_400" type = "float">
+        <input name = "in" type = "float" nodename = "_401" />
+    </realitykit_fractional>
+    <multiply name = "_401" type = "float">
+        <input name = "in1" type = "float" nodename = "_402" />
+        <input name = "in2" type = "float" value = "43758.55" />
+    </multiply>
+    <sin name = "_402" type = "float">
+        <input name = "in" type = "float" nodename = "_403" />
+    </sin>
+    <dotproduct name = "_403" type = "float">
+        <input name = "in1" type = "vector2" nodename = "_404" />
+        <input name = "in2" type = "vector2" value = "12.9898,78.233" />
+    </dotproduct>
+    <dot name = "_404" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_405" />
+    </dot>
+    <add name = "_405" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_397" />
+        <input name = "in2" type = "vector2" value = "1,0" />
+    </add>
+    <multiply name = "_406" type = "float">
+        <input name = "in1" type = "float" nodename = "_368" />
+        <input name = "in2" type = "float" nodename = "_407" />
+    </multiply>
+    <dot name = "_407" type = "float">
+        <input name = "in" type = "float" nodename = "_408" />
+    </dot>
+    <add name = "_408" type = "float">
+        <input name = "in1" type = "float" nodename = "_409" />
+        <input name = "in2" type = "float" nodename = "_420" />
+    </add>
+    <multiply name = "_409" type = "float">
+        <input name = "in1" type = "float" nodename = "_410" />
+        <input name = "in2" type = "float" nodename = "_413" />
+    </multiply>
+    <subtract name = "_410" type = "float">
+        <input name = "in1" type = "float" value = "1" />
+        <input name = "in2" type = "float" nodename = "_411" />
+    </subtract>
+    <dot name = "_411" type = "float">
+        <input name = "in" type = "float" nodename = "_412" />
+    </dot>
+    <swizzle name = "_412" type = "float">
+        <input name = "in" type = "vector2" nodename = "_370" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <dot name = "_413" type = "float">
+        <input name = "in" type = "float" nodename = "_414" />
+    </dot>
+    <realitykit_fractional name = "_414" type = "float">
+        <input name = "in" type = "float" nodename = "_415" />
+    </realitykit_fractional>
+    <multiply name = "_415" type = "float">
+        <input name = "in1" type = "float" nodename = "_416" />
+        <input name = "in2" type = "float" value = "43758.55" />
+    </multiply>
+    <sin name = "_416" type = "float">
+        <input name = "in" type = "float" nodename = "_417" />
+    </sin>
+    <dotproduct name = "_417" type = "float">
+        <input name = "in1" type = "vector2" nodename = "_418" />
+        <input name = "in2" type = "vector2" value = "12.9898,78.233" />
+    </dotproduct>
+    <dot name = "_418" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_419" />
+    </dot>
+    <add name = "_419" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_397" />
+        <input name = "in2" type = "vector2" value = "0,1" />
+    </add>
+    <multiply name = "_420" type = "float">
+        <input name = "in1" type = "float" nodename = "_411" />
+        <input name = "in2" type = "float" nodename = "_421" />
+    </multiply>
+    <dot name = "_421" type = "float">
+        <input name = "in" type = "float" nodename = "_422" />
+    </dot>
+    <realitykit_fractional name = "_422" type = "float">
+        <input name = "in" type = "float" nodename = "_423" />
+    </realitykit_fractional>
+    <multiply name = "_423" type = "float">
+        <input name = "in1" type = "float" nodename = "_424" />
+        <input name = "in2" type = "float" value = "43758.55" />
+    </multiply>
+    <sin name = "_424" type = "float">
+        <input name = "in" type = "float" nodename = "_425" />
+    </sin>
+    <dotproduct name = "_425" type = "float">
+        <input name = "in1" type = "vector2" nodename = "_426" />
+        <input name = "in2" type = "vector2" value = "12.9898,78.233" />
+    </dotproduct>
+    <dot name = "_426" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_427" />
+    </dot>
+    <add name = "_427" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_397" />
+        <input name = "in2" type = "vector2" value = "1,1" />
+    </add>
+    <power name = "_428" type = "float">
+        <input name = "in1" type = "float" value = "0.5" />
+        <input name = "in2" type = "float" nodename = "_429" />
+    </power>
+    <subtract name = "_429" type = "float">
+        <input name = "in1" type = "float" value = "3" />
+        <input name = "in2" type = "float" value = "1" />
+    </subtract>
+    <multiply name = "_430" type = "float">
+        <input name = "in1" type = "float" nodename = "_431" />
+        <input name = "in2" type = "float" nodename = "_494" />
+    </multiply>
+    <add name = "_431" type = "float">
+        <input name = "in1" type = "float" nodename = "_432" />
+        <input name = "in2" type = "float" nodename = "_472" />
+    </add>
+    <multiply name = "_432" type = "float">
+        <input name = "in1" type = "float" nodename = "_433" />
+        <input name = "in2" type = "float" nodename = "_450" />
+    </multiply>
+    <subtract name = "_433" type = "float">
+        <input name = "in1" type = "float" value = "1" />
+        <input name = "in2" type = "float" nodename = "_434" />
+    </subtract>
+    <dot name = "_434" type = "float">
+        <input name = "in" type = "float" nodename = "_435" />
+    </dot>
+    <swizzle name = "_435" type = "float">
+        <input name = "in" type = "vector2" nodename = "_436" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <multiply name = "_436" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_437" />
+        <input name = "in2" type = "vector2" nodename = "_448" />
+    </multiply>
+    <multiply name = "_437" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_438" />
+        <input name = "in2" type = "vector2" nodename = "_438" />
+    </multiply>
+    <realitykit_fractional name = "_438" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_439" />
+    </realitykit_fractional>
+    <dot name = "_439" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_440" />
+    </dot>
+    <combine2 name = "_440" type = "vector2">
+        <input name = "in1" type = "float" nodename = "_441" />
+        <input name = "in2" type = "float" nodename = "_445" />
+    </combine2>
+    <divide name = "_441" type = "float">
+        <input name = "in1" type = "float" nodename = "_442" />
+        <input name = "in2" type = "float" nodename = "_444" />
+    </divide>
+    <multiply name = "_442" type = "float">
+        <input name = "in1" type = "float" nodename = "_443" />
+        <input name = "in2" type = "float" nodename = "_311" />
+    </multiply>
+    <swizzle name = "_443" type = "float">
+        <input name = "in" type = "vector2" nodename = "_307" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <power name = "_444" type = "float">
+        <input name = "in1" type = "float" value = "2" />
+        <input name = "in2" type = "float" value = "2" />
+    </power>
+    <divide name = "_445" type = "float">
+        <input name = "in1" type = "float" nodename = "_446" />
+        <input name = "in2" type = "float" nodename = "_444" />
+    </divide>
+    <multiply name = "_446" type = "float">
+        <input name = "in1" type = "float" nodename = "_447" />
+        <input name = "in2" type = "float" nodename = "_311" />
+    </multiply>
+    <swizzle name = "_447" type = "float">
+        <input name = "in" type = "vector2" nodename = "_307" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <subtract name = "_448" type = "vector2">
+        <input name = "in1" type = "vector2" value = "3,3" />
+        <input name = "in2" type = "vector2" nodename = "_449" />
+    </subtract>
+    <multiply name = "_449" type = "vector2">
+        <input name = "in1" type = "vector2" value = "2,2" />
+        <input name = "in2" type = "vector2" nodename = "_438" />
+    </multiply>
+    <dot name = "_450" type = "float">
+        <input name = "in" type = "float" nodename = "_451" />
+    </dot>
+    <add name = "_451" type = "float">
+        <input name = "in1" type = "float" nodename = "_452" />
+        <input name = "in2" type = "float" nodename = "_464" />
+    </add>
+    <multiply name = "_452" type = "float">
+        <input name = "in1" type = "float" nodename = "_453" />
+        <input name = "in2" type = "float" nodename = "_456" />
+    </multiply>
+    <subtract name = "_453" type = "float">
+        <input name = "in1" type = "float" value = "1" />
+        <input name = "in2" type = "float" nodename = "_454" />
+    </subtract>
+    <dot name = "_454" type = "float">
+        <input name = "in" type = "float" nodename = "_455" />
+    </dot>
+    <swizzle name = "_455" type = "float">
+        <input name = "in" type = "vector2" nodename = "_436" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <dot name = "_456" type = "float">
+        <input name = "in" type = "float" nodename = "_457" />
+    </dot>
+    <realitykit_fractional name = "_457" type = "float">
+        <input name = "in" type = "float" nodename = "_458" />
+    </realitykit_fractional>
+    <multiply name = "_458" type = "float">
+        <input name = "in1" type = "float" nodename = "_459" />
+        <input name = "in2" type = "float" value = "43758.55" />
+    </multiply>
+    <sin name = "_459" type = "float">
+        <input name = "in" type = "float" nodename = "_460" />
+    </sin>
+    <dotproduct name = "_460" type = "float">
+        <input name = "in1" type = "vector2" nodename = "_461" />
+        <input name = "in2" type = "vector2" value = "12.9898,78.233" />
+    </dotproduct>
+    <dot name = "_461" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_462" />
+    </dot>
+    <add name = "_462" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_463" />
+        <input name = "in2" type = "vector2" value = "0,0" />
+    </add>
+    <floor name = "_463" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_439" />
+    </floor>
+    <multiply name = "_464" type = "float">
+        <input name = "in1" type = "float" nodename = "_454" />
+        <input name = "in2" type = "float" nodename = "_465" />
+    </multiply>
+    <dot name = "_465" type = "float">
+        <input name = "in" type = "float" nodename = "_466" />
+    </dot>
+    <realitykit_fractional name = "_466" type = "float">
+        <input name = "in" type = "float" nodename = "_467" />
+    </realitykit_fractional>
+    <multiply name = "_467" type = "float">
+        <input name = "in1" type = "float" nodename = "_468" />
+        <input name = "in2" type = "float" value = "43758.55" />
+    </multiply>
+    <sin name = "_468" type = "float">
+        <input name = "in" type = "float" nodename = "_469" />
+    </sin>
+    <dotproduct name = "_469" type = "float">
+        <input name = "in1" type = "vector2" nodename = "_470" />
+        <input name = "in2" type = "vector2" value = "12.9898,78.233" />
+    </dotproduct>
+    <dot name = "_470" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_471" />
+    </dot>
+    <add name = "_471" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_463" />
+        <input name = "in2" type = "vector2" value = "1,0" />
+    </add>
+    <multiply name = "_472" type = "float">
+        <input name = "in1" type = "float" nodename = "_434" />
+        <input name = "in2" type = "float" nodename = "_473" />
+    </multiply>
+    <dot name = "_473" type = "float">
+        <input name = "in" type = "float" nodename = "_474" />
+    </dot>
+    <add name = "_474" type = "float">
+        <input name = "in1" type = "float" nodename = "_475" />
+        <input name = "in2" type = "float" nodename = "_486" />
+    </add>
+    <multiply name = "_475" type = "float">
+        <input name = "in1" type = "float" nodename = "_476" />
+        <input name = "in2" type = "float" nodename = "_479" />
+    </multiply>
+    <subtract name = "_476" type = "float">
+        <input name = "in1" type = "float" value = "1" />
+        <input name = "in2" type = "float" nodename = "_477" />
+    </subtract>
+    <dot name = "_477" type = "float">
+        <input name = "in" type = "float" nodename = "_478" />
+    </dot>
+    <swizzle name = "_478" type = "float">
+        <input name = "in" type = "vector2" nodename = "_436" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <dot name = "_479" type = "float">
+        <input name = "in" type = "float" nodename = "_480" />
+    </dot>
+    <realitykit_fractional name = "_480" type = "float">
+        <input name = "in" type = "float" nodename = "_481" />
+    </realitykit_fractional>
+    <multiply name = "_481" type = "float">
+        <input name = "in1" type = "float" nodename = "_482" />
+        <input name = "in2" type = "float" value = "43758.55" />
+    </multiply>
+    <sin name = "_482" type = "float">
+        <input name = "in" type = "float" nodename = "_483" />
+    </sin>
+    <dotproduct name = "_483" type = "float">
+        <input name = "in1" type = "vector2" nodename = "_484" />
+        <input name = "in2" type = "vector2" value = "12.9898,78.233" />
+    </dotproduct>
+    <dot name = "_484" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_485" />
+    </dot>
+    <add name = "_485" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_463" />
+        <input name = "in2" type = "vector2" value = "0,1" />
+    </add>
+    <multiply name = "_486" type = "float">
+        <input name = "in1" type = "float" nodename = "_477" />
+        <input name = "in2" type = "float" nodename = "_487" />
+    </multiply>
+    <dot name = "_487" type = "float">
+        <input name = "in" type = "float" nodename = "_488" />
+    </dot>
+    <realitykit_fractional name = "_488" type = "float">
+        <input name = "in" type = "float" nodename = "_489" />
+    </realitykit_fractional>
+    <multiply name = "_489" type = "float">
+        <input name = "in1" type = "float" nodename = "_490" />
+        <input name = "in2" type = "float" value = "43758.55" />
+    </multiply>
+    <sin name = "_490" type = "float">
+        <input name = "in" type = "float" nodename = "_491" />
+    </sin>
+    <dotproduct name = "_491" type = "float">
+        <input name = "in1" type = "vector2" nodename = "_492" />
+        <input name = "in2" type = "vector2" value = "12.9898,78.233" />
+    </dotproduct>
+    <dot name = "_492" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_493" />
+    </dot>
+    <add name = "_493" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_463" />
+        <input name = "in2" type = "vector2" value = "1,1" />
+    </add>
+    <power name = "_494" type = "float">
+        <input name = "in1" type = "float" value = "0.5" />
+        <input name = "in2" type = "float" nodename = "_495" />
+    </power>
+    <subtract name = "_495" type = "float">
+        <input name = "in1" type = "float" value = "3" />
+        <input name = "in2" type = "float" value = "2" />
+    </subtract>
+    <add name = "_496" type = "vector4">
+        <input name = "in1" type = "vector4" nodename = "_537" />
+        <input name = "in2" type = "vector4" nodename = "_539" />
+    </add>
+    <multiply name = "_497" type = "float">
+        <input name = "in1" type = "float" nodename = "_Wave_Speed" />
+        <input name = "in2" type = "float" nodename = "_498" />
+    </multiply>
+    <constant name = "_Time" type = "vector4">
+        <input name = "value" type = "vector4" value = "0,0,0,0" />
+    </constant>
+    <swizzle name = "_498" type = "float">
+        <input name = "channels" type = "string" value = "y" />
+        <input name = "in" type = "vector4" nodename = "_Time" />
+    </swizzle>
+    <texcoord name = "_499" type = "vector2">
+        <input name = "index" type = "integer" value = "0" />
+    </texcoord>
+    <multiply name = "_500" type = "vector2">
+        <input name = "in1" type = "vector2" value = "1,-1" />
+        <input name = "in2" type = "vector2" nodename = "_499" />
+    </multiply>
+    <add name = "_501" type = "vector2">
+        <input name = "in1" type = "vector2" value = "0,1" />
+        <input name = "in2" type = "vector2" nodename = "_500" />
+    </add>
+    <multiply name = "_502" type = "float">
+        <input name = "in1" type = "float" nodename = "_287" />
+        <input name = "in2" type = "float" nodename = "_DistortStrength" />
+    </multiply>
+    <constant name = "_DistortStrength" type = "float">
+        <input name = "value" type = "float" value = "0.2" />
+    </constant>
+    <mix name = "_503" type = "float">
+        <input name = "bg" type = "float" value = "1" />
+        <input name = "fg" type = "float" nodename = "_286" />
+        <input name = "mix" type = "float" nodename = "_Wave_Width" />
+    </mix>
+    <mix name = "_504" type = "float">
+        <input name = "bg" type = "float" nodename = "_503" />
+        <input name = "fg" type = "float" nodename = "_1" />
+        <input name = "mix" type = "float" value = "0.9" />
+    </mix>
+    <ifgreatereq name = "_505" type = "float">
+        <input name = "value2" type = "float" nodename = "_506" />
+        <input name = "value1" type = "float" value = "0.1" />
+        <input name = "in1" type = "float" value = "1" />
+        <input name = "in2" type = "float" value = "0" />
+    </ifgreatereq>
+    <mix name = "_506" type = "float">
+        <input name = "bg" type = "float" nodename = "_504" />
+        <input name = "fg" type = "float" nodename = "_518" />
+        <input name = "mix" type = "float" value = "2" />
+    </mix>
+    <constant name = "_WaveCount" type = "float">
+        <input name = "value" type = "float" value = "50" />
+    </constant>
+    <add name = "_507" type = "float">
+        <input name = "in1" type = "float" nodename = "_285" />
+        <input name = "in2" type = "float" nodename = "_497" />
+    </add>
+    <constant name = "_Wave_Speed" type = "float">
+        <input name = "value" type = "float" value = "10" />
+    </constant>
+    <constant name = "_Wave_Width" type = "float">
+        <input name = "value" type = "float" value = "10" />
+    </constant>
+    <constant name = "_Light" type = "float">
+        <input name = "value" type = "float" value = "1" />
+    </constant>
+    <multiply name = "_508" type = "float">
+        <input name = "in1" type = "float" nodename = "_505" />
+        <input name = "in2" type = "float" nodename = "_Light" />
+    </multiply>
+    <dot name = "_509" type = "float">
+        <input name = "in" type = "float" nodename = "_510" />
+    </dot>
+    <magnitude name = "_510" type = "float">
+        <input name = "in" type = "vector2" nodename = "_511" />
+    </magnitude>
+    <subtract name = "_511" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_512" />
+        <input name = "in2" type = "vector2" nodename = "_513" />
+    </subtract>
+    <dot name = "_512" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_517" />
+    </dot>
+    <dot name = "_513" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_514" />
+    </dot>
+    <combine2 name = "_514" type = "vector2">
+        <input name = "in1" type = "float" value = "0.5" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </combine2>
+    <texcoord name = "_515" type = "vector2">
+        <input name = "index" type = "integer" value = "0" />
+    </texcoord>
+    <multiply name = "_516" type = "vector2">
+        <input name = "in1" type = "vector2" value = "1,-1" />
+        <input name = "in2" type = "vector2" nodename = "_515" />
+    </multiply>
+    <add name = "_517" type = "vector2">
+        <input name = "in1" type = "vector2" value = "0,1" />
+        <input name = "in2" type = "vector2" nodename = "_516" />
+    </add>
+    <multiply name = "_518" type = "float">
+        <input name = "in1" type = "float" nodename = "_509" />
+        <input name = "in2" type = "float" value = "1.16" />
+    </multiply>
+    <constant name = "_Step" type = "float">
+        <input name = "value" type = "float" value = "0.14" />
+    </constant>
+    <subtract name = "_519" type = "float">
+        <input name = "in1" type = "float" nodename = "_277" />
+        <input name = "in2" type = "float" nodename = "_Step" />
+    </subtract>
+    <divide name = "_520" type = "float">
+        <input name = "in1" type = "float" nodename = "_519" />
+        <input name = "in2" type = "float" nodename = "_521" />
+    </divide>
+    <subtract name = "_521" type = "float">
+        <input name = "in1" type = "float" value = "1" />
+        <input name = "in2" type = "float" nodename = "_Step" />
+    </subtract>
+    <max name = "_522" type = "float">
+        <input name = "in1" type = "float" nodename = "_520" />
+        <input name = "in2" type = "float" value = "0" />
+    </max>
+    <ifgreatereq name = "_523" type = "float">
+        <input name = "value2" type = "float" nodename = "_Step" />
+        <input name = "value1" type = "float" nodename = "_524" />
+        <input name = "in1" type = "float" value = "1" />
+        <input name = "in2" type = "float" value = "0" />
+    </ifgreatereq>
+    <dot name = "_524" type = "float">
+        <input name = "in" type = "float" nodename = "_525" />
+    </dot>
+    <magnitude name = "_525" type = "float">
+        <input name = "in" type = "vector2" nodename = "_526" />
+    </magnitude>
+    <subtract name = "_526" type = "vector2">
+        <input name = "in1" type = "vector2" nodename = "_527" />
+        <input name = "in2" type = "vector2" nodename = "_528" />
+    </subtract>
+    <dot name = "_527" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_532" />
+    </dot>
+    <dot name = "_528" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_529" />
+    </dot>
+    <combine2 name = "_529" type = "vector2">
+        <input name = "in1" type = "float" value = "0.5" />
+        <input name = "in2" type = "float" value = "0.5" />
+    </combine2>
+    <texcoord name = "_530" type = "vector2">
+        <input name = "index" type = "integer" value = "0" />
+    </texcoord>
+    <multiply name = "_531" type = "vector2">
+        <input name = "in1" type = "vector2" value = "1,-1" />
+        <input name = "in2" type = "vector2" nodename = "_530" />
+    </multiply>
+    <add name = "_532" type = "vector2">
+        <input name = "in1" type = "vector2" value = "0,1" />
+        <input name = "in2" type = "vector2" nodename = "_531" />
+    </add>
+    <multiply name = "_533" type = "float">
+        <input name = "in1" type = "float" nodename = "_505" />
+        <input name = "in2" type = "float" nodename = "_523" />
+    </multiply>
+    <GeometryModification name = "_534" type = "vertexshader">
+    </GeometryModification>
+    <realitykit_unlit name = "_535" type = "surfaceshader">
+        <input name = "applyPostProcessToneMap" type = "boolean" value = "false" />
+        <input name = "color" type = "color3" nodename = "_542" />
+        <input name = "opacity" type = "float" nodename = "_533" />
+        <input name = "opacityThreshold" type = "float" value = "0.5" />
+    </realitykit_unlit>
+    <surfacematerial name = "USD_WaterWave" type = "material">
+        <input name = "vertexshader" type = "vertexshader" nodename = "_534" />
+        <input name = "surfaceshader" type = "surfaceshader" nodename = "_535" />
+    </surfacematerial>
+    <swizzle name = "_536" type = "vector2">
+        <input name = "in" type = "vector4" nodename = "_496" />
+        <input name = "channels" type = "string" value = "xy" />
+    </swizzle>
+    <swizzle name = "_537" type = "vector4">
+        <input name = "in" type = "float" nodename = "_502" />
+        <input name = "channels" type = "string" value = "xxxx" />
+    </swizzle>
+    <dot name = "_538" type = "vector2">
+        <input name = "in" type = "vector2" nodename = "_501" />
+    </dot>
+    <combine4 name = "_539" type = "vector4">
+        <input name = "in1" type = "float" nodename = "_540" />
+        <input name = "in2" type = "float" nodename = "_541" />
+        <input name = "in3" type = "float" value = "0" />
+        <input name = "in4" type = "float" value = "0" />
+    </combine4>
+    <swizzle name = "_540" type = "float">
+        <input name = "in" type = "vector2" nodename = "_538" />
+        <input name = "channels" type = "string" value = "x" />
+    </swizzle>
+    <swizzle name = "_541" type = "float">
+        <input name = "in" type = "vector2" nodename = "_538" />
+        <input name = "channels" type = "string" value = "y" />
+    </swizzle>
+    <swizzle name = "_542" type = "color3">
+        <input name = "in" type = "float" nodename = "_508" />
+        <input name = "channels" type = "string" value = "xxx" />
+    </swizzle>
+</materialx>
